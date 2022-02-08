@@ -1,0 +1,9 @@
+<h2>Twitter feed</h2>
+
+{{#each tweets}}
+
+  <h3>{{this.title}}</h3>
+  <p>{{this.content}}</p>
+  <a href="/user/profile/{{this.creatorId._id}}">{{this.creatorId.username}}</a>
+
+{{/each}}

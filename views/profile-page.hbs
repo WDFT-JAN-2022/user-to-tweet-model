@@ -1,0 +1,9 @@
+<h1>This is {{user.username}}'s profile page</h1>
+
+<h2>{{user.username}}'s tweets</h2>
+{{#each tweets}}
+
+  <h3>{{this.title}}</h3>
+  <p>{{this.content}}</p>
+
+{{/each}}
